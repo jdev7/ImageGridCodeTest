@@ -1,5 +1,5 @@
 //
-//  PRRouter.h
+//  PRMainVC.h
 //  ImageGridCodeTest
 //
 //  Created by Juan Navas Martin on 10/07/16.
@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PRMainView.h"
 
-@protocol PRRouter <NSObject>
+@interface PRMainVC : UIViewController <PRMainView>
 
-- (void)navigateToMainWithWindow:(UIWindow *)window;
-- (void)navigateToGallery;
+@property (nonatomic, strong) id<PRMainEventHandler> presenter;
 
 @end

@@ -8,15 +8,15 @@
 
 #import "PRDependencyInjectionModule.h"
 #import "PRRouterImpl.h"
+#import "PRMainVC.h"
+#import "PRMainPresenter.h"
 
 @implementation PRDependencyInjectionModule
 
 - (void)configure {
-    //Products module
-//    [self bindClass:[ProductsVC class] toProtocol:@protocol(ProductsView)];
-//    [self bindClass:[ProductsPresenter class] toProtocol:@protocol(ProductsEventHandler)];
-//    [self bindClass:[ProductsInteractor class] toProtocol:@protocol(ProductsInteractorInput)];
-    
+    //Main module
+    [self bindClass:[PRMainVC class] toProtocol:@protocol(PRMainView)];
+    [self bindClass:[PRMainPresenter class] toProtocol:@protocol(PRMainEventHandler)];
     
     //Router
     [self bindClass:[PRRouterImpl class] toProtocol:@protocol(PRRouter)];

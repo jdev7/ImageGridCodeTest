@@ -30,4 +30,10 @@
     self.rootViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"MainNavigationControllerID"];
     window.rootViewController = self.rootViewController;
 }
+
+- (void)navigateToGallery {
+    UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"GalleryViewControllerID"];
+    [self.rootViewController showViewController:viewController sender:self];
+}
+
 @end

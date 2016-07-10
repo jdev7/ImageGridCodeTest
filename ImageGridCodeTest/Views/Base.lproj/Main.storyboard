@@ -5,30 +5,62 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PRMainVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S93-PP-0Ha">
+                                <rect key="frame" x="143" y="319" width="89" height="30"/>
+                                <state key="normal" title="Open Gallery"/>
+                                <connections>
+                                    <action selector="openGalleryWasTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zjy-nB-5Yd"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="S93-PP-0Ha" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jrY-WI-7DA"/>
+                            <constraint firstItem="S93-PP-0Ha" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kvn-6K-9st"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Dia-FH-mOQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1135" y="1025"/>
+            <point key="canvasLocation" x="892.5" y="1024.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PCH-FT-I8w">
+            <objects>
+                <viewController storyboardIdentifier="GalleryViewControllerID" id="YSK-JH-6Fl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qsC-E8-zBR"/>
+                        <viewControllerLayoutGuide type="bottom" id="aMQ-In-oEI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ai1-hk-pLU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vvB-0y-GJk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1460" y="991"/>
         </scene>
         <!--NavigationDI-->
         <scene sceneID="xdP-hg-Mwb">
             <objects>
                 <navigationController storyboardIdentifier="MainNavigationControllerID" automaticallyAdjustsScrollViewInsets="NO" id="Hvb-QB-rw3" customClass="PRNavigationDI" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="R9D-0V-WGy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

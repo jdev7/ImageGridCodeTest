@@ -16,6 +16,8 @@
 		0905A5DF1D325CEE00C49B9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0905A5D91D325CEE00C49B9C /* Assets.xcassets */; };
 		0905A5E61D325D0900C49B9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0905A5E21D325D0900C49B9C /* LaunchScreen.storyboard */; };
 		0905A5E71D325D0900C49B9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0905A5E41D325D0900C49B9C /* Main.storyboard */; };
+		0905A5F01D32627800C49B9C /* PRMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905A5EF1D32627800C49B9C /* PRMainVC.m */; };
+		0905A5F51D32643900C49B9C /* PRMainPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905A5F41D32643900C49B9C /* PRMainPresenter.m */; };
 		53A4CF5850B3B69E20FE0D13 /* libPods-ImageGridCodeTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F8442A2CA880F8855F2F7E /* libPods-ImageGridCodeTest.a */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,12 @@
 		0905A5D91D325CEE00C49B9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0905A5E31D325D0900C49B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0905A5E51D325D0900C49B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0905A5EE1D32627800C49B9C /* PRMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRMainVC.h; sourceTree = "<group>"; };
+		0905A5EF1D32627800C49B9C /* PRMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRMainVC.m; sourceTree = "<group>"; };
+		0905A5F11D32628E00C49B9C /* PRMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRMainView.h; sourceTree = "<group>"; };
+		0905A5F21D3262A400C49B9C /* PRMainEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRMainEventHandler.h; sourceTree = "<group>"; };
+		0905A5F31D32643900C49B9C /* PRMainPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRMainPresenter.h; sourceTree = "<group>"; };
+		0905A5F41D32643900C49B9C /* PRMainPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRMainPresenter.m; sourceTree = "<group>"; };
 		43F8442A2CA880F8855F2F7E /* libPods-ImageGridCodeTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ImageGridCodeTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86B8838A917E604FA5E783FA /* Pods-ImageGridCodeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGridCodeTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageGridCodeTest/Pods-ImageGridCodeTest.release.xcconfig"; sourceTree = "<group>"; };
 		E113FC4DA99900DDC5A31DF7 /* Pods-ImageGridCodeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGridCodeTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageGridCodeTest/Pods-ImageGridCodeTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +141,7 @@
 		0905A5C31D32564200C49B9C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				0905A5E81D3261F800C49B9C /* Main */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -166,6 +175,35 @@
 				0905A5D61D325BD100C49B9C /* main.m */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		0905A5E81D3261F800C49B9C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0905A5EC1D32623400C49B9C /* View */,
+				0905A5ED1D32623B00C49B9C /* Presenter */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0905A5EC1D32623400C49B9C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0905A5F11D32628E00C49B9C /* PRMainView.h */,
+				0905A5EE1D32627800C49B9C /* PRMainVC.h */,
+				0905A5EF1D32627800C49B9C /* PRMainVC.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0905A5ED1D32623B00C49B9C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0905A5F21D3262A400C49B9C /* PRMainEventHandler.h */,
+				0905A5F31D32643900C49B9C /* PRMainPresenter.h */,
+				0905A5F41D32643900C49B9C /* PRMainPresenter.m */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		AA166FCB926F54E395893EAC /* Frameworks */ = {
@@ -309,9 +347,11 @@
 				0905A5CA1D32574300C49B9C /* PRRouterImpl.m in Sources */,
 				0905A5D71D325BD100C49B9C /* AppDelegate.m in Sources */,
 				0905A5D21D325B6300C49B9C /* PRStoryboard.m in Sources */,
+				0905A5F51D32643900C49B9C /* PRMainPresenter.m in Sources */,
 				0905A5C71D3256FB00C49B9C /* PRDependencyInjectionModule.m in Sources */,
 				0905A5D81D325BD100C49B9C /* main.m in Sources */,
 				0905A5CF1D325B2300C49B9C /* PRNavigationDI.m in Sources */,
+				0905A5F01D32627800C49B9C /* PRMainVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
