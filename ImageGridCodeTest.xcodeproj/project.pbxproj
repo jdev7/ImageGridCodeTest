@@ -27,6 +27,7 @@
 		0905A61A1D329D3200C49B9C /* PRImageMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905A6191D329D3200C49B9C /* PRImageMeta.m */; };
 		0905A61D1D32AA0D00C49B9C /* PRImagesServiceMockImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905A61C1D32AA0D00C49B9C /* PRImagesServiceMockImpl.m */; };
 		0905A61F1D32AAD300C49B9C /* images.json in Resources */ = {isa = PBXBuildFile; fileRef = 0905A61E1D32AAD300C49B9C /* images.json */; };
+		0905A6211D32B58000C49B9C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0905A6201D32B58000C49B9C /* README.md */; };
 		53A4CF5850B3B69E20FE0D13 /* libPods-ImageGridCodeTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F8442A2CA880F8855F2F7E /* libPods-ImageGridCodeTest.a */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,7 @@
 		0905A61B1D32AA0D00C49B9C /* PRImagesServiceMockImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRImagesServiceMockImpl.h; sourceTree = "<group>"; };
 		0905A61C1D32AA0D00C49B9C /* PRImagesServiceMockImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRImagesServiceMockImpl.m; sourceTree = "<group>"; };
 		0905A61E1D32AAD300C49B9C /* images.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = images.json; sourceTree = "<group>"; };
+		0905A6201D32B58000C49B9C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		43F8442A2CA880F8855F2F7E /* libPods-ImageGridCodeTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ImageGridCodeTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86B8838A917E604FA5E783FA /* Pods-ImageGridCodeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGridCodeTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageGridCodeTest/Pods-ImageGridCodeTest.release.xcconfig"; sourceTree = "<group>"; };
 		E113FC4DA99900DDC5A31DF7 /* Pods-ImageGridCodeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGridCodeTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageGridCodeTest/Pods-ImageGridCodeTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		0905A59B1D300E6000C49B9C = {
 			isa = PBXGroup;
 			children = (
+				0905A6201D32B58000C49B9C /* README.md */,
 				0905A5A61D300E6100C49B9C /* ImageGridCodeTest */,
 				0905A5A51D300E6000C49B9C /* Products */,
 				CB9748D6D452EDB407989D77 /* Pods */,
@@ -465,6 +468,7 @@
 				0905A5C71D3256FB00C49B9C /* PRDependencyInjectionModule.m in Sources */,
 				0905A61D1D32AA0D00C49B9C /* PRImagesServiceMockImpl.m in Sources */,
 				0905A6001D326C0E00C49B9C /* PRGalleryVC.m in Sources */,
+				0905A6211D32B58000C49B9C /* README.md in Sources */,
 				0905A6031D326E1F00C49B9C /* PRImageCVCell.m in Sources */,
 				0905A5D81D325BD100C49B9C /* main.m in Sources */,
 				0905A5CF1D325B2300C49B9C /* PRNavigationDI.m in Sources */,
