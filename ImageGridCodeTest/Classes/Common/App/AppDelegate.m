@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import <Objection/Objection.h>
+#import "PRDependencyInjectionModule.h"
+#import "PRRouter.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +19,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    JSObjectionInjector *injector = [JSObjection createInjector:[[PRDependencyInjectionModule alloc] init]];
+    [JSObjection setDefaultInjector:injector];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    id<PRRouter> router = [injector getObject:@protocol(PRRouter)];
+    [router navigateToMainWithWindow:self.window];
+    
     return YES;
 }
 

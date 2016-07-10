@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  PRStoryboard.h
 //  ImageGridCodeTest
 //
-//  Created by Juan Navas Martin on 08/07/16.
+//  Created by Juan Navas Martin on 10/07/16.
 //  Copyright © 2016 Perhapps. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface PRStoryboard : UIStoryboard
 
 @end
-

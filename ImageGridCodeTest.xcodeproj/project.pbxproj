@@ -7,25 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0905A5A91D300E6100C49B9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905A5A81D300E6100C49B9C /* main.m */; };
-		0905A5AC1D300E6100C49B9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905A5AB1D300E6100C49B9C /* AppDelegate.m */; };
-		0905A5AF1D300E6100C49B9C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905A5AE1D300E6100C49B9C /* ViewController.m */; };
-		0905A5B21D300E6100C49B9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0905A5B01D300E6100C49B9C /* Main.storyboard */; };
-		0905A5B41D300E6100C49B9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0905A5B31D300E6100C49B9C /* Assets.xcassets */; };
-		0905A5B71D300E6100C49B9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0905A5B51D300E6100C49B9C /* LaunchScreen.storyboard */; };
+		0905A5C71D3256FB00C49B9C /* PRDependencyInjectionModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905A5C61D3256FB00C49B9C /* PRDependencyInjectionModule.m */; };
+		0905A5CA1D32574300C49B9C /* PRRouterImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905A5C91D32574300C49B9C /* PRRouterImpl.m */; };
+		0905A5CF1D325B2300C49B9C /* PRNavigationDI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905A5CE1D325B2300C49B9C /* PRNavigationDI.m */; };
+		0905A5D21D325B6300C49B9C /* PRStoryboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905A5D11D325B6300C49B9C /* PRStoryboard.m */; };
+		0905A5D71D325BD100C49B9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905A5D51D325BD100C49B9C /* AppDelegate.m */; };
+		0905A5D81D325BD100C49B9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905A5D61D325BD100C49B9C /* main.m */; };
+		0905A5DF1D325CEE00C49B9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0905A5D91D325CEE00C49B9C /* Assets.xcassets */; };
+		0905A5E61D325D0900C49B9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0905A5E21D325D0900C49B9C /* LaunchScreen.storyboard */; };
+		0905A5E71D325D0900C49B9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0905A5E41D325D0900C49B9C /* Main.storyboard */; };
+		53A4CF5850B3B69E20FE0D13 /* libPods-ImageGridCodeTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F8442A2CA880F8855F2F7E /* libPods-ImageGridCodeTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0905A5A41D300E6000C49B9C /* ImageGridCodeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageGridCodeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0905A5A81D300E6100C49B9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0905A5AA1D300E6100C49B9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		0905A5AB1D300E6100C49B9C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0905A5AD1D300E6100C49B9C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0905A5AE1D300E6100C49B9C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0905A5B11D300E6100C49B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0905A5B31D300E6100C49B9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0905A5B61D300E6100C49B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0905A5B81D300E6100C49B9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0905A5C51D3256FB00C49B9C /* PRDependencyInjectionModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRDependencyInjectionModule.h; sourceTree = "<group>"; };
+		0905A5C61D3256FB00C49B9C /* PRDependencyInjectionModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRDependencyInjectionModule.m; sourceTree = "<group>"; };
+		0905A5C81D32574300C49B9C /* PRRouterImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRRouterImpl.h; sourceTree = "<group>"; };
+		0905A5C91D32574300C49B9C /* PRRouterImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRRouterImpl.m; sourceTree = "<group>"; };
+		0905A5CB1D32586B00C49B9C /* PRRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRRouter.h; sourceTree = "<group>"; };
+		0905A5CD1D325B2300C49B9C /* PRNavigationDI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRNavigationDI.h; sourceTree = "<group>"; };
+		0905A5CE1D325B2300C49B9C /* PRNavigationDI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRNavigationDI.m; sourceTree = "<group>"; };
+		0905A5D01D325B6300C49B9C /* PRStoryboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRStoryboard.h; sourceTree = "<group>"; };
+		0905A5D11D325B6300C49B9C /* PRStoryboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRStoryboard.m; sourceTree = "<group>"; };
+		0905A5D41D325BD100C49B9C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0905A5D51D325BD100C49B9C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0905A5D61D325BD100C49B9C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0905A5D91D325CEE00C49B9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0905A5E31D325D0900C49B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0905A5E51D325D0900C49B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43F8442A2CA880F8855F2F7E /* libPods-ImageGridCodeTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ImageGridCodeTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86B8838A917E604FA5E783FA /* Pods-ImageGridCodeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGridCodeTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageGridCodeTest/Pods-ImageGridCodeTest.release.xcconfig"; sourceTree = "<group>"; };
+		E113FC4DA99900DDC5A31DF7 /* Pods-ImageGridCodeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGridCodeTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageGridCodeTest/Pods-ImageGridCodeTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53A4CF5850B3B69E20FE0D13 /* libPods-ImageGridCodeTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +59,8 @@
 			children = (
 				0905A5A61D300E6100C49B9C /* ImageGridCodeTest */,
 				0905A5A51D300E6000C49B9C /* Products */,
+				CB9748D6D452EDB407989D77 /* Pods */,
+				AA166FCB926F54E395893EAC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +75,8 @@
 		0905A5A61D300E6100C49B9C /* ImageGridCodeTest */ = {
 			isa = PBXGroup;
 			children = (
-				0905A5AA1D300E6100C49B9C /* AppDelegate.h */,
-				0905A5AB1D300E6100C49B9C /* AppDelegate.m */,
-				0905A5AD1D300E6100C49B9C /* ViewController.h */,
-				0905A5AE1D300E6100C49B9C /* ViewController.m */,
-				0905A5B01D300E6100C49B9C /* Main.storyboard */,
-				0905A5B31D300E6100C49B9C /* Assets.xcassets */,
-				0905A5B51D300E6100C49B9C /* LaunchScreen.storyboard */,
+				0905A5BF1D3255ED00C49B9C /* Views */,
+				0905A5BE1D3255E800C49B9C /* Classes */,
 				0905A5B81D300E6100C49B9C /* Info.plist */,
 				0905A5A71D300E6100C49B9C /* Supporting Files */,
 			);
@@ -74,9 +86,103 @@
 		0905A5A71D300E6100C49B9C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0905A5A81D300E6100C49B9C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0905A5BE1D3255E800C49B9C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0905A5C01D32561000C49B9C /* Common */,
+				0905A5C31D32564200C49B9C /* Modules */,
+				0905A5C11D32562A00C49B9C /* Router */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0905A5BF1D3255ED00C49B9C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0905A5D91D325CEE00C49B9C /* Assets.xcassets */,
+				0905A5E21D325D0900C49B9C /* LaunchScreen.storyboard */,
+				0905A5E41D325D0900C49B9C /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0905A5C01D32561000C49B9C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0905A5D31D325BBD00C49B9C /* App */,
+				0905A5CC1D325AE100C49B9C /* Views */,
+				0905A5C41D32569A00C49B9C /* DependencyInjection */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0905A5C11D32562A00C49B9C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0905A5CB1D32586B00C49B9C /* PRRouter.h */,
+				0905A5C81D32574300C49B9C /* PRRouterImpl.h */,
+				0905A5C91D32574300C49B9C /* PRRouterImpl.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		0905A5C31D32564200C49B9C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0905A5C41D32569A00C49B9C /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				0905A5C51D3256FB00C49B9C /* PRDependencyInjectionModule.h */,
+				0905A5C61D3256FB00C49B9C /* PRDependencyInjectionModule.m */,
+			);
+			name = DependencyInjection;
+			path = "Dependency Injection";
+			sourceTree = "<group>";
+		};
+		0905A5CC1D325AE100C49B9C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0905A5CD1D325B2300C49B9C /* PRNavigationDI.h */,
+				0905A5CE1D325B2300C49B9C /* PRNavigationDI.m */,
+				0905A5D01D325B6300C49B9C /* PRStoryboard.h */,
+				0905A5D11D325B6300C49B9C /* PRStoryboard.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0905A5D31D325BBD00C49B9C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0905A5D41D325BD100C49B9C /* AppDelegate.h */,
+				0905A5D51D325BD100C49B9C /* AppDelegate.m */,
+				0905A5D61D325BD100C49B9C /* main.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AA166FCB926F54E395893EAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43F8442A2CA880F8855F2F7E /* libPods-ImageGridCodeTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB9748D6D452EDB407989D77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E113FC4DA99900DDC5A31DF7 /* Pods-ImageGridCodeTest.debug.xcconfig */,
+				86B8838A917E604FA5E783FA /* Pods-ImageGridCodeTest.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0905A5BB1D300E6100C49B9C /* Build configuration list for PBXNativeTarget "ImageGridCodeTest" */;
 			buildPhases = (
+				734DABFA076DE4E9D3C6D462 /* [CP] Check Pods Manifest.lock */,
 				0905A5A01D300E6000C49B9C /* Sources */,
 				0905A5A11D300E6000C49B9C /* Frameworks */,
 				0905A5A21D300E6000C49B9C /* Resources */,
+				34061EBC9533EA7EC12B34D2 /* [CP] Embed Pods Frameworks */,
+				6291AB1EC284C071DACAD07F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,42 +245,93 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0905A5B71D300E6100C49B9C /* LaunchScreen.storyboard in Resources */,
-				0905A5B41D300E6100C49B9C /* Assets.xcassets in Resources */,
-				0905A5B21D300E6100C49B9C /* Main.storyboard in Resources */,
+				0905A5E71D325D0900C49B9C /* Main.storyboard in Resources */,
+				0905A5DF1D325CEE00C49B9C /* Assets.xcassets in Resources */,
+				0905A5E61D325D0900C49B9C /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34061EBC9533EA7EC12B34D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImageGridCodeTest/Pods-ImageGridCodeTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6291AB1EC284C071DACAD07F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImageGridCodeTest/Pods-ImageGridCodeTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		734DABFA076DE4E9D3C6D462 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0905A5A01D300E6000C49B9C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0905A5AF1D300E6100C49B9C /* ViewController.m in Sources */,
-				0905A5AC1D300E6100C49B9C /* AppDelegate.m in Sources */,
-				0905A5A91D300E6100C49B9C /* main.m in Sources */,
+				0905A5CA1D32574300C49B9C /* PRRouterImpl.m in Sources */,
+				0905A5D71D325BD100C49B9C /* AppDelegate.m in Sources */,
+				0905A5D21D325B6300C49B9C /* PRStoryboard.m in Sources */,
+				0905A5C71D3256FB00C49B9C /* PRDependencyInjectionModule.m in Sources */,
+				0905A5D81D325BD100C49B9C /* main.m in Sources */,
+				0905A5CF1D325B2300C49B9C /* PRNavigationDI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0905A5B01D300E6100C49B9C /* Main.storyboard */ = {
+		0905A5E21D325D0900C49B9C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0905A5B11D300E6100C49B9C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0905A5B51D300E6100C49B9C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0905A5B61D300E6100C49B9C /* Base */,
+				0905A5E31D325D0900C49B9C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0905A5E41D325D0900C49B9C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0905A5E51D325D0900C49B9C /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -261,6 +421,7 @@
 		};
 		0905A5BC1D300E6100C49B9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E113FC4DA99900DDC5A31DF7 /* Pods-ImageGridCodeTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ImageGridCodeTest/Info.plist;
@@ -272,6 +433,7 @@
 		};
 		0905A5BD1D300E6100C49B9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86B8838A917E604FA5E783FA /* Pods-ImageGridCodeTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ImageGridCodeTest/Info.plist;
@@ -300,6 +462,7 @@
 				0905A5BD1D300E6100C49B9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
