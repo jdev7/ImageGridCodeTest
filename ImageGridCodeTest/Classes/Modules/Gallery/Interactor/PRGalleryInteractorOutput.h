@@ -6,7 +6,7 @@
 //  Copyright © 2016 Perhapps. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "PRGalleryInteractorInput.h"
 
 @protocol PRGalleryInteractorOutput <NSObject>
 

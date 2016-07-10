@@ -41,7 +41,7 @@
         <scene sceneID="PCH-FT-I8w">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vvB-0y-GJk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="GalleryViewControllerID" id="YSK-JH-6Fl" customClass="PRGalleryVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GalleryViewControllerID" automaticallyAdjustsScrollViewInsets="NO" id="YSK-JH-6Fl" customClass="PRGalleryVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qsC-E8-zBR"/>
                         <viewControllerLayoutGuide type="bottom" id="aMQ-In-oEI"/>
@@ -71,6 +71,9 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="165" height="165"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </imageView>
+                                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Uxy-N7-2RL">
+                                                    <rect key="frame" x="72" y="73" width="20" height="20"/>
+                                                </activityIndicatorView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
@@ -78,9 +81,12 @@
                                             <constraint firstItem="3tB-J8-hTJ" firstAttribute="top" secondItem="Z0V-tn-e2C" secondAttribute="top" id="9Y5-wK-MuR"/>
                                             <constraint firstAttribute="bottom" secondItem="3tB-J8-hTJ" secondAttribute="bottom" id="GIC-ck-Gfz"/>
                                             <constraint firstItem="3tB-J8-hTJ" firstAttribute="leading" secondItem="Z0V-tn-e2C" secondAttribute="leading" id="SNN-e1-fql"/>
+                                            <constraint firstItem="Uxy-N7-2RL" firstAttribute="centerY" secondItem="3tB-J8-hTJ" secondAttribute="centerY" id="TA9-jC-IEW"/>
+                                            <constraint firstItem="Uxy-N7-2RL" firstAttribute="centerX" secondItem="3tB-J8-hTJ" secondAttribute="centerX" id="bEk-X7-n3Y"/>
                                             <constraint firstAttribute="trailing" secondItem="3tB-J8-hTJ" secondAttribute="trailing" id="tO2-lS-g17"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="activityIndicator" destination="Uxy-N7-2RL" id="GY0-q3-YaE"/>
                                             <outlet property="imageView" destination="3tB-J8-hTJ" id="Q7H-lm-vRQ"/>
                                         </connections>
                                     </collectionViewCell>

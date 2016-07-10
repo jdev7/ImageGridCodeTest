@@ -21,7 +21,12 @@
 		0905A6001D326C0E00C49B9C /* PRGalleryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905A5FF1D326C0E00C49B9C /* PRGalleryVC.m */; };
 		0905A6031D326E1F00C49B9C /* PRImageCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905A6021D326E1F00C49B9C /* PRImageCVCell.m */; };
 		0905A6071D32708B00C49B9C /* UIImageView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905A6061D32708B00C49B9C /* UIImageView+Utils.m */; };
-		0905A60B1D3271E200C49B9C /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905A60A1D3271E200C49B9C /* UIView+Utils.m */; };
+		0905A60E1D3273E400C49B9C /* PRGalleryPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905A60D1D3273E400C49B9C /* PRGalleryPresenter.m */; };
+		0905A6111D3294BF00C49B9C /* PRGalleryInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905A6101D3294BF00C49B9C /* PRGalleryInteractor.m */; };
+		0905A6161D32964D00C49B9C /* PRImagesServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905A6151D32964D00C49B9C /* PRImagesServiceImpl.m */; };
+		0905A61A1D329D3200C49B9C /* PRImageMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905A6191D329D3200C49B9C /* PRImageMeta.m */; };
+		0905A61D1D32AA0D00C49B9C /* PRImagesServiceMockImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905A61C1D32AA0D00C49B9C /* PRImagesServiceMockImpl.m */; };
+		0905A61F1D32AAD300C49B9C /* images.json in Resources */ = {isa = PBXBuildFile; fileRef = 0905A61E1D32AAD300C49B9C /* images.json */; };
 		53A4CF5850B3B69E20FE0D13 /* libPods-ImageGridCodeTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F8442A2CA880F8855F2F7E /* libPods-ImageGridCodeTest.a */; };
 /* End PBXBuildFile section */
 
@@ -33,13 +38,13 @@
 		0905A5C81D32574300C49B9C /* PRRouterImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRRouterImpl.h; sourceTree = "<group>"; };
 		0905A5C91D32574300C49B9C /* PRRouterImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRRouterImpl.m; sourceTree = "<group>"; };
 		0905A5CB1D32586B00C49B9C /* PRRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRRouter.h; sourceTree = "<group>"; };
-		0905A5CD1D325B2300C49B9C /* PRNavigationDI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRNavigationDI.h; sourceTree = "<group>"; };
-		0905A5CE1D325B2300C49B9C /* PRNavigationDI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRNavigationDI.m; sourceTree = "<group>"; };
-		0905A5D01D325B6300C49B9C /* PRStoryboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRStoryboard.h; sourceTree = "<group>"; };
-		0905A5D11D325B6300C49B9C /* PRStoryboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRStoryboard.m; sourceTree = "<group>"; };
-		0905A5D41D325BD100C49B9C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		0905A5D51D325BD100C49B9C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0905A5D61D325BD100C49B9C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0905A5CD1D325B2300C49B9C /* PRNavigationDI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRNavigationDI.h; path = Views/PRNavigationDI.h; sourceTree = "<group>"; };
+		0905A5CE1D325B2300C49B9C /* PRNavigationDI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRNavigationDI.m; path = Views/PRNavigationDI.m; sourceTree = "<group>"; };
+		0905A5D01D325B6300C49B9C /* PRStoryboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRStoryboard.h; path = Views/PRStoryboard.h; sourceTree = "<group>"; };
+		0905A5D11D325B6300C49B9C /* PRStoryboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRStoryboard.m; path = Views/PRStoryboard.m; sourceTree = "<group>"; };
+		0905A5D41D325BD100C49B9C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = App/AppDelegate.h; sourceTree = "<group>"; };
+		0905A5D51D325BD100C49B9C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = App/AppDelegate.m; sourceTree = "<group>"; };
+		0905A5D61D325BD100C49B9C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = App/main.m; sourceTree = "<group>"; };
 		0905A5D91D325CEE00C49B9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0905A5E31D325D0900C49B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0905A5E51D325D0900C49B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,10 +62,20 @@
 		0905A5FF1D326C0E00C49B9C /* PRGalleryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRGalleryVC.m; sourceTree = "<group>"; };
 		0905A6011D326E1F00C49B9C /* PRImageCVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRImageCVCell.h; sourceTree = "<group>"; };
 		0905A6021D326E1F00C49B9C /* PRImageCVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRImageCVCell.m; sourceTree = "<group>"; };
-		0905A6051D32708B00C49B9C /* UIImageView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Utils.h"; sourceTree = "<group>"; };
-		0905A6061D32708B00C49B9C /* UIImageView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Utils.m"; sourceTree = "<group>"; };
-		0905A6091D3271E200C49B9C /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
-		0905A60A1D3271E200C49B9C /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utils.m"; sourceTree = "<group>"; };
+		0905A6051D32708B00C49B9C /* UIImageView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+Utils.h"; path = "Utils/UIImageView+Utils.h"; sourceTree = "<group>"; };
+		0905A6061D32708B00C49B9C /* UIImageView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+Utils.m"; path = "Utils/UIImageView+Utils.m"; sourceTree = "<group>"; };
+		0905A60C1D3273E400C49B9C /* PRGalleryPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRGalleryPresenter.h; sourceTree = "<group>"; };
+		0905A60D1D3273E400C49B9C /* PRGalleryPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRGalleryPresenter.m; sourceTree = "<group>"; };
+		0905A60F1D3294BF00C49B9C /* PRGalleryInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRGalleryInteractor.h; sourceTree = "<group>"; };
+		0905A6101D3294BF00C49B9C /* PRGalleryInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRGalleryInteractor.m; sourceTree = "<group>"; };
+		0905A6131D32962500C49B9C /* PRImagesService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRImagesService.h; sourceTree = "<group>"; };
+		0905A6141D32964D00C49B9C /* PRImagesServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRImagesServiceImpl.h; sourceTree = "<group>"; };
+		0905A6151D32964D00C49B9C /* PRImagesServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRImagesServiceImpl.m; sourceTree = "<group>"; };
+		0905A6181D329D3200C49B9C /* PRImageMeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRImageMeta.h; sourceTree = "<group>"; };
+		0905A6191D329D3200C49B9C /* PRImageMeta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRImageMeta.m; sourceTree = "<group>"; };
+		0905A61B1D32AA0D00C49B9C /* PRImagesServiceMockImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRImagesServiceMockImpl.h; sourceTree = "<group>"; };
+		0905A61C1D32AA0D00C49B9C /* PRImagesServiceMockImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRImagesServiceMockImpl.m; sourceTree = "<group>"; };
+		0905A61E1D32AAD300C49B9C /* images.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = images.json; sourceTree = "<group>"; };
 		43F8442A2CA880F8855F2F7E /* libPods-ImageGridCodeTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ImageGridCodeTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86B8838A917E604FA5E783FA /* Pods-ImageGridCodeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGridCodeTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageGridCodeTest/Pods-ImageGridCodeTest.release.xcconfig"; sourceTree = "<group>"; };
 		E113FC4DA99900DDC5A31DF7 /* Pods-ImageGridCodeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGridCodeTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageGridCodeTest/Pods-ImageGridCodeTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -138,9 +153,19 @@
 			isa = PBXGroup;
 			children = (
 				0905A6041D32706800C49B9C /* Utils */,
+				0905A6051D32708B00C49B9C /* UIImageView+Utils.h */,
+				0905A6061D32708B00C49B9C /* UIImageView+Utils.m */,
 				0905A5D31D325BBD00C49B9C /* App */,
+				0905A5D41D325BD100C49B9C /* AppDelegate.h */,
+				0905A5D51D325BD100C49B9C /* AppDelegate.m */,
+				0905A5D61D325BD100C49B9C /* main.m */,
 				0905A5CC1D325AE100C49B9C /* Views */,
+				0905A5CD1D325B2300C49B9C /* PRNavigationDI.h */,
+				0905A5CE1D325B2300C49B9C /* PRNavigationDI.m */,
+				0905A5D01D325B6300C49B9C /* PRStoryboard.h */,
+				0905A5D11D325B6300C49B9C /* PRStoryboard.m */,
 				0905A5C41D32569A00C49B9C /* DependencyInjection */,
+				0905A6121D3295D500C49B9C /* Services */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -177,10 +202,6 @@
 		0905A5CC1D325AE100C49B9C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0905A5CD1D325B2300C49B9C /* PRNavigationDI.h */,
-				0905A5CE1D325B2300C49B9C /* PRNavigationDI.m */,
-				0905A5D01D325B6300C49B9C /* PRStoryboard.h */,
-				0905A5D11D325B6300C49B9C /* PRStoryboard.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,9 +209,6 @@
 		0905A5D31D325BBD00C49B9C /* App */ = {
 			isa = PBXGroup;
 			children = (
-				0905A5D41D325BD100C49B9C /* AppDelegate.h */,
-				0905A5D51D325BD100C49B9C /* AppDelegate.m */,
-				0905A5D61D325BD100C49B9C /* main.m */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -250,6 +268,8 @@
 			isa = PBXGroup;
 			children = (
 				0905A5FB1D32689900C49B9C /* PRGalleryEventHandler.h */,
+				0905A60C1D3273E400C49B9C /* PRGalleryPresenter.h */,
+				0905A60D1D3273E400C49B9C /* PRGalleryPresenter.m */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -257,8 +277,11 @@
 		0905A5F91D32682E00C49B9C /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				0905A6171D329C4200C49B9C /* Entities */,
 				0905A5FC1D3268B200C49B9C /* PRGalleryInteractorInput.h */,
 				0905A5FD1D3268BC00C49B9C /* PRGalleryInteractorOutput.h */,
+				0905A60F1D3294BF00C49B9C /* PRGalleryInteractor.h */,
+				0905A6101D3294BF00C49B9C /* PRGalleryInteractor.m */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -266,12 +289,30 @@
 		0905A6041D32706800C49B9C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				0905A6051D32708B00C49B9C /* UIImageView+Utils.h */,
-				0905A6061D32708B00C49B9C /* UIImageView+Utils.m */,
-				0905A6091D3271E200C49B9C /* UIView+Utils.h */,
-				0905A60A1D3271E200C49B9C /* UIView+Utils.m */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		0905A6121D3295D500C49B9C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0905A6131D32962500C49B9C /* PRImagesService.h */,
+				0905A61B1D32AA0D00C49B9C /* PRImagesServiceMockImpl.h */,
+				0905A61C1D32AA0D00C49B9C /* PRImagesServiceMockImpl.m */,
+				0905A6141D32964D00C49B9C /* PRImagesServiceImpl.h */,
+				0905A6151D32964D00C49B9C /* PRImagesServiceImpl.m */,
+				0905A61E1D32AAD300C49B9C /* images.json */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0905A6171D329C4200C49B9C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				0905A6181D329D3200C49B9C /* PRImageMeta.h */,
+				0905A6191D329D3200C49B9C /* PRImageMeta.m */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		AA166FCB926F54E395893EAC /* Frameworks */ = {
@@ -352,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0905A5E71D325D0900C49B9C /* Main.storyboard in Resources */,
+				0905A61F1D32AAD300C49B9C /* images.json in Resources */,
 				0905A5DF1D325CEE00C49B9C /* Assets.xcassets in Resources */,
 				0905A5E61D325D0900C49B9C /* LaunchScreen.storyboard in Resources */,
 			);
@@ -413,16 +455,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				0905A5CA1D32574300C49B9C /* PRRouterImpl.m in Sources */,
+				0905A6111D3294BF00C49B9C /* PRGalleryInteractor.m in Sources */,
 				0905A5D71D325BD100C49B9C /* AppDelegate.m in Sources */,
 				0905A5D21D325B6300C49B9C /* PRStoryboard.m in Sources */,
+				0905A61A1D329D3200C49B9C /* PRImageMeta.m in Sources */,
 				0905A6071D32708B00C49B9C /* UIImageView+Utils.m in Sources */,
 				0905A5F51D32643900C49B9C /* PRMainPresenter.m in Sources */,
+				0905A6161D32964D00C49B9C /* PRImagesServiceImpl.m in Sources */,
 				0905A5C71D3256FB00C49B9C /* PRDependencyInjectionModule.m in Sources */,
-				0905A60B1D3271E200C49B9C /* UIView+Utils.m in Sources */,
+				0905A61D1D32AA0D00C49B9C /* PRImagesServiceMockImpl.m in Sources */,
 				0905A6001D326C0E00C49B9C /* PRGalleryVC.m in Sources */,
 				0905A6031D326E1F00C49B9C /* PRImageCVCell.m in Sources */,
 				0905A5D81D325BD100C49B9C /* main.m in Sources */,
 				0905A5CF1D325B2300C49B9C /* PRNavigationDI.m in Sources */,
+				0905A60E1D3273E400C49B9C /* PRGalleryPresenter.m in Sources */,
 				0905A5F01D32627800C49B9C /* PRMainVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,6 +10,7 @@
 
 @interface UIImageView (Utils)
 
-- (void)loadImageInBackground:(NSString *)imageUrl;
+- (void)loadImageInBackground:(NSString *)imageUrl
+                   completion:(void(^)())completion;
 
 @end

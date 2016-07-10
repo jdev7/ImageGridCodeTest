@@ -1,15 +1,15 @@
 //
-//  UIView+Utils.h
+//  PRImageMeta.h
 //  ImageGridCodeTest
 //
 //  Created by Juan Navas Martin on 10/07/16.
 //  Copyright © 2016 Perhapps. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <JSONModel/JSONModel.h>
 
-@interface UIView (Utils)
+@interface PRImageMeta : JSONModel
 
-- (void)addCenteredSubview:(UIView *)subview;
+@property (nonatomic, copy) NSString *imageUrl;
 
 @end

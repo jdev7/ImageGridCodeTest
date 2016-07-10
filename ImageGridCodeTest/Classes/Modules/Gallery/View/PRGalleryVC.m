@@ -35,6 +35,7 @@ objection_requires(@"presenter");
 
 - (void)showImages:(NSArray *)urls {
     self.imageURLs = urls;
+    [self.cvImages reloadData];
 }
 
 #pragma mark - UICollectionView Datasource and Delegate Methods
@@ -52,7 +53,10 @@ objection_requires(@"presenter");
     PRImageCVCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID_IMAGE_CV_CELL forIndexPath:indexPath];
     
     NSString *url = self.imageURLs[indexPath.item];
-    [cell.imageView loadImageInBackground:url];
+    [cell.activityIndicator startAnimating];
+    [cell.imageView loadImageInBackground:url completion:^{
+        [cell.activityIndicator stopAnimating];
+    }];
     
     return cell;
 }
