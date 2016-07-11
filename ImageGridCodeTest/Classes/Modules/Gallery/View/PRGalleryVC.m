@@ -10,6 +10,7 @@
 #import <Objection/Objection.h>
 #import "PRImageCVCell.h"
 #import "UIImageView+Utils.h"
+#import "UIViewController+Utils.h"
 
 @interface PRGalleryVC () <UICollectionViewDelegate, UICollectionViewDataSource>
 

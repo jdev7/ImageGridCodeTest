@@ -19,11 +19,13 @@ objection_requires(@"interactor")
 }
 
 - (void)updateView {
+    [self.view showLoading];
     [self.interactor loadImages];
 }
 
 - (void)setImagesURLs:(NSArray *)imagesURLs {
     [self.view showImages:imagesURLs];
+    [self.view stopLoading];
 }
 
 

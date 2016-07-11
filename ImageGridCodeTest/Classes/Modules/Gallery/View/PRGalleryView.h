@@ -13,5 +13,7 @@
 
 @property (nonatomic, strong) id<PRGalleryEventHandler> presenter;
 - (void)showImages:(NSArray *)urls;
+- (void)showLoading;
+- (void)stopLoading;
 
 @end
